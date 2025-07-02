@@ -1,8 +1,9 @@
-const express = require("express");
-const rout = express.Router();
+import express from "express";
 
-router.get("/", (req:any, res:any) => {
+const router = express.Router();
+
+router.get("/", (_req:any, res:any) => {
     res.json({mensaje: "¡Hola desde el backend de login!"});
 });
 
-module.exports = router;
+export default router;

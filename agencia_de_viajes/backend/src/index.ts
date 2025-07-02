@@ -1,9 +1,10 @@
-const routers = require("./routes/productos")
-const express = require("express");
+import express from "express";
+import routers from "./routes/productos"
+
 const app = express();
 const PORT = 3000;
 
-app.get("/", (req:any, res:any) => {
+app.get("/", (_req:any, res:any) => {
     res.send("¡Hola desde el backend!");
 });
 
