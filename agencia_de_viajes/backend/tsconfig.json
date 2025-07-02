@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+<<<<<<< HEAD
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
@@ -111,3 +112,14 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   }
 }
+=======
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*"]
+}
+>>>>>>> dcda6b04256fc5fa6eae595eb6b5500e450716b3
