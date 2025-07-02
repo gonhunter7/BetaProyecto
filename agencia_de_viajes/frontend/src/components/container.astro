@@ -1,7 +1,14 @@
 ---
 import Navbar from "./navbar.astro";
 import Information from "./information.astro";
+
+const res = await fetch("http://localhost:3000/api/productos");
+const message = await res.json();
 ---
+
+<ul>
+    {message.mensaje}
+</ul>
 
 <div class="container">
     <Navbar />
