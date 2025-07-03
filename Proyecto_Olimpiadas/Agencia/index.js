@@ -3,7 +3,7 @@ const { Pool } = require('pg');
 const app = express();
 
 const pool = new Pool({
-  user: 'postgres',      // Cambia aquí tus datos
+  user: 'postgres',      // Cambia los datos
   host: 'localhost',
   database: 'Agencia_Viajes',
   password: 'riungon2350',
@@ -11,7 +11,7 @@ const pool = new Pool({
 });
 
 app.use(express.json());
-app.use(express.static('public'));  // si servís archivos estáticos
+app.use(express.static('public'));  // si hay html, css, js en public
 
 app.get('/api/productos', async (req, res) => {
   try {

@@ -1,29 +1,59 @@
+<!--Este archivo es la página principal de la agencia de viajes.
+  Acá se encuentra la estructura básica del sitio, con el menú, los paquetes de viaje y el pie de página.
+  traten de hacerlo lo mas serio posible los comentarios chicos.
+-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!--Configuración básica del documento HTML.
+    - charset: para que se vean bien los acentos y caracteres especiales.
+    - viewport: hace que la web se vea bien en el celu y la compu.
+    - title: el nombre que aparece en la pestaña del navegador.
+    - link: conecta el archivo de estilos CSS para que todo se vea más lindo.
+  -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agencia Travel - Paquetes de Viajes</title>
+  <title>Viajes Paradise - Paquetes de Viajes</title>
   <link rel="stylesheet" href="../static/Viajes_style.css" />
 </head>
 <body>
+  <!--Barra de navegación (arriba de todo):
+    - Logo de la agencia.
+    - Título principal.
+    - Botón para ver el carrito (con el contador de productos).
+    - Botón para ir a la página de inicio de sesión.
+  -->
   <nav class="navbar">
     <div class="navbar-brand">
       <a href="#" class="logo">Viajes Paradise ✈️</a>
     </div>
     <h1>Directo al Paraíso</h1>
-    <button class="btn cart-btn">
+    <button class="btn cart-btn" id="open-modal">
       🛒 Carrito (<span id="cart-count">0</span>)
     </button>
     <a href="../../Login/public/index.html" class="btn login-btn">Iniciar Sesión</a>
     </div>
   </nav>
 
+  <!--Encabezado de la página, Título grande y una frase para motivar a viajar(malisima la frase jsjsjsjsjs, me da mas ganas de no viajar que de viajar).
+    (pone una frase vos que sea buena eh) (nah) -->
   <div class="header">
     <h1 class="header-title">Explora los mejores paquetes por Sudamérica</h1>
     <p class="header-subtitle">Descubre tu próxima aventura con nosotros.</p>
   </div>
 
+  <!--Acá empiezan los paquetes de viaje.
+    Cada "package-card" es una tarjeta con info de un destino:
+    - Imagen del lugar
+    - Duración del viaje
+    - Nombre del destino
+    - Fechas
+    - Info del vuelo
+    - Puntuación
+    - Oferta o frase copada
+    - Precio
+    - Botones para mejorar el paquete o agregarlo al carrito
+    Para agregar más destinos, se poduede copiar y pegar una de estas tarjetas y cambiarle los datos. -->
   <div class="packages-container">
     <div class="package-card">
       <img src="../static/Bolivia.jpg" alt="Bolivia" class="package-image">
@@ -277,19 +307,23 @@
 
   </div>
 
+  <!--Pie de página (footer):
+    - Info sobre la agencia
+    - Datos de contacto
+    - Copyright -->
   <footer class="footer">
   <div class="footer-content">
     <div class="footer-section about">
       <h3 class="footer-title">Sobre Nosotros</h3>
-      <p>TravelDreams te ayuda a explorar el mundo con los mejores paquetes turísticos. ¡Tu aventura comienza aquí!</p>
+      <p>Viajes Paradise te ayuda a explorar el mundo con los mejores paquetes turísticos. ¡Tu aventura comienza aquí!</p>
       <div class="contact">
         <span>+54 9 11 1234-5678</span>
-        <span>info@traveldreams.com</span>
+        <span>info@ViajesParadise.com</span>
       </div>
     </div>
     
   <div class="footer-bottom">
-    &copy; 2025 TravelDreams. Todos los derechos reservados.
+    &copy; 2025 Viajes Paradise. Todos los derechos reservados.
   </div>
 </footer>
 </body>
