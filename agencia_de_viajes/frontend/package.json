@@ -6,12 +6,13 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "sass": "sass ../construction/src/styles/index.scss ../construction/src/styles/index.css",
-    "sass-watch": "sass --watch ./construction/src/styles/index.scss:./construction/src/styles/index.css"
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "astro": "5.10.2",
+    "tailwindcss": "^4.1.11"
   },
   "dependencies": {
-    "astro": "^5.10.0",
-    "sass": "^1.89.2"
+    "@tailwindcss/vite": "^4.1.11"
   }
 }

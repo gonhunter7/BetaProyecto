@@ -1,5 +1,5 @@
 # Sintaxis para la creación del portal de Agencia de viajes
-## Version 0.0.1
+## Version 0.0.2
 
 Se usará parte de la estructura de carpetas para el desarrollo de la Web App, deberán clonarla para poder seguir avanzando con las tareas en particular, cada modificación será enviada con un Pull Request (Llamado de verificación) y se evaluará si la versión con la tarea hecha, cuenta con los criterios solicitados para poder hacer el merge con la rama principal.
 
