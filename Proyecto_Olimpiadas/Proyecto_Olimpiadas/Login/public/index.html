@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agencia Travel - Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="login-container">
+
+    <form class="login-form" action="/login" method="post">
+      <h2 class="form-title">Bienvenido a TravelDreams ✈️</h2>
+
+      <div class="input-box">
+        <input type="email" name="email" required />
+        <label>Email</label>
+      </div>
+
+      <div class="input-box">
+        <input type="password" name="password" required />
+        <label>Contraseña</label>
+      </div>
+
+      <button type="submit" class="btn">Iniciar sesión</button>
+      <p class="switch-text">¿No tenés cuenta? <a href="#" id="show-register">Registrate</a></p>
+    </form>
+
+    <form class="register-form hidden" action="/register" method="post">
+      <h2 class="form-title">¡Crea tu cuenta! 🌍</h2>
+
+      <div class="input-box">
+        <input type="text" name="nombre" required />
+        <label>Nombre completo</label>
+      </div>
+
+      <div class="input-box">
+        <input type="email" name="email" required />
+        <label>Email</label>
+      </div>
+
+      <div class="input-box">
+        <input type="password" name="password" required />
+        <label>Contraseña</label>
+      </div>
+
+      <button type="submit" class="btn">Registrarse</button>
+      <p class="switch-text">¿Ya tenés cuenta? <a href="#" id="show-login">Iniciar sesión</a></p>
+    </form>
+
+  </div>
+
+  <script>
+    const loginForm = document.querySelector(".login-form");
+    const registerForm = document.querySelector(".register-form");
+    const showRegisterLink = document.getElementById("show-register");
+    const showLoginLink = document.getElementById("show-login");
+
+    showRegisterLink.addEventListener("click", e => {
+      e.preventDefault();
+      loginForm.classList.add("hidden");
+      registerForm.classList.remove("hidden");
+    });
+
+    showLoginLink.addEventListener("click", e => {
+      e.preventDefault();
+      registerForm.classList.add("hidden");
+      loginForm.classList.remove("hidden");
+    });
+  </script>
+
+</body>
+</html>
